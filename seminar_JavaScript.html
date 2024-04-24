@@ -14,15 +14,21 @@
 
     <script language="JavaScript">
         // Задание 1
-        alert("Hello, World! Миру-Мир");
+        alert("1. Hello, World! Миру-Мир");
         // Задание 2. Результат сложения
-        alert (`результат: ${158+2}` );
+        alert (`2. результат: ${158+2}` );
         // Задание 3. Ввести имя через параметр
         let p1 =  "Serge";        
-        alert("Hello, "  + p1);
+        alert("3. Hello, "  + p1);
         // Задание 4. Ввести имя через параметр через диалоговое окно
         let p2 = prompt("Enter your Name ?", "Name:");
-        alert("Hello, " + p2 + " ! I am " + p1);
+        alert("4. Hello, " + p2 + " ! I am " + p1);
+        // Задание 5. Написать функцию, выводящую в окне текст и переменную
+        function showMessage () {
+            let message = '5. Hello, ' + p1;
+            alert (message);
+        }
+        showMessage();
 
         let n = parseInt(prompt("Enter Number:"));
         alert("Hello, World! Миру-Мир, " + n);
