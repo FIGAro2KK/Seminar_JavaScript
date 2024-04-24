@@ -16,20 +16,26 @@
         // Задание 1
         alert("1. Hello, World! Миру-Мир");
         // Задание 2. Результат сложения
-        alert (`2. результат: ${158+2}` );
+        alert(`2. результат: ${158 + 2}`);
         // Задание 3. Ввести имя через параметр
-        let p1 =  "Serge";        
-        alert("3. Hello, "  + p1);
+        let p1 = "Serge";
+        alert("3. Hello, " + p1);
         // Задание 4. Ввести имя через параметр через диалоговое окно
         let p2 = prompt("Enter your Name ?", "Name:");
         alert("4. Hello, " + p2 + " ! I am " + p1);
         // Задание 5. Написать функцию, выводящую в окне текст и переменную
-        function showMessage () {
+        function showMessage() {
             let message = '5. Hello, ' + p1;
-            alert (message);
+            alert(message);
         }
         showMessage();
-
+        // Задание 6. Вывести на экране в диалоговом окне вопрос с условием и в зависимости от нажатой кнопки выполнить разные сообщения
+        if (confirm("6. Вы уверены ? ")) {
+            alert("Мы рады, что вы уверены! ");
+        }
+        else {
+            alert("Жаль что вы не уверены...")
+        }
         let n = parseInt(prompt("Enter Number:"));
         alert("Hello, World! Миру-Мир, " + n);
     </script>
