@@ -6,14 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="myScripts.js"></script>
-    <link rel="stylesheet" href="styles_Buttom.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_Buttom.css">
+    <link rel="stylesheet" href="styles/style_Header.css">
     <title>HomeWork JavaScript</title>
 </head>
 
-<body> 
-    <button onclick="showName()">Спросить имя</button>
+<body>
+    <!-- Красивый заголовок -->
+    <div class="header">
+        <header>
+            <h1 data-val="Семинар 3. Основы JavaScript для начинающих разработчиков">Семинар 3. Основы JavaScript для
+                начинающих разработчиков</h1>
+        </header>
+    </div>
+    <p>Домашнее задание</p>
+    <p>Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции</p>
+
+    <!-- Обычная кнопка -->
+    <button onclick="showName()">Обычная кнопка. Спросить имя</button>
+    <!-- Красивая кнопка -->
     <div class="frame">
-        <button class="custom-btn btn-12" onclick="showName()"><span>Click!</span><span>Нажми, чтобы спросить имя</span></button>
+        <button class="custom-btn btn-12" onclick="showName()"><span>Click!</span><span>Нажми, чтобы спросить
+                имя</span></button>
+    </div>
+    <div class="footer">
+        <hr>
+        <p style="font-size: 60%;">Thanks for the props <a href="https://codepen.io/yuhomyan/pen/OJMejWJ?editors=1100"
+                target="_blank">@yuhomyan</a>, for the idea of button animation. And <a
+                href="https://codepen.io/dtab428/pen/BavMgqB" target="_blank">@ghaste</a> for background-image animation
+            idea. <a href="https://codepen.io/trending" target="_blank">Link to codepen.io</a> </p>
     </div>
 </body>
 
