@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Это обычный HTML документ</p>
+
+    <script language="JavaScript">
+        // Задание 1
+        alert("1. Hello, World! Миру-Мир");
+        // Задание 2. Результат сложения
+        alert(`2. результат: ${158 + 2}`);
+        // Задание 3. Ввести имя через параметр
+        let p1 = "Serge";
+        alert("3. Hello, " + p1);
+        // Задание 4. Ввести имя через параметр через диалоговое окно
+        let p2 = prompt("Enter your Name ?", "Name:");
+        alert("4. Hello, " + p2 + " ! I am " + p1);
+        // Задание 5. Написать функцию, выводящую в окне текст и переменную
+        function showMessage() {
+            let message = '5. Hello, ' + p1;
+            alert(message);
+        }
+        showMessage();
+        // Задание 6. Вывести на экране в диалоговом окне вопрос с условием и в зависимости от нажатой кнопки выполнить разные сообщения
+        if (confirm("6. Вы уверены ? ")) {
+            alert("Мы рады, что вы уверены! ");
+        }
+        else {
+            alert("Жаль что вы не уверены...")
+        }
+        // Задание 7. Переписать код, используя конструкцию switch-case
+        let age = parseInt(prompt('7. Сколько Вам лет:'));
+        switch (true) {
+            case age <= 10: alert('Вам нужно учить уроки!'); breake;
+            case age >= 11 && age <= 18: alert('Вы совершеннолетний, вам можно все!'); breake;
+            case age >= 19 && age <= 65: alert('Ложись спасть, завтра на работу!'); breake;
+            default: alert('Мы не знаем, что вам делать!'); breake;
+        }
+
+    </script>
+
+</body>
+
+</html>
